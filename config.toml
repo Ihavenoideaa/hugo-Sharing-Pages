@@ -1,0 +1,56 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hugo-theme-hello-friend"
+paginate = 5
+
+[params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "post"
+  # "light" or "dark"
+  defaultTheme = "dark"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 5
+  # Enable to show reading time in minutes for posts
+  showReadingTime = false
+
+[languages]
+  [languages.en]
+    title = "读书观影记录"
+    subtitle = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "更多"
+    writtenBy = "Written by"
+    readMore = "阅读全文"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    DateFormatList = "2006-01-02 15:04:05"
+    DateFormatSingle = "2006-01-02 15:04:05"
+
+    [params.logo]
+      logoText = "书山有路勤为径"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [menu]
+      [[menu.main]]
+        identifier = "阅读"
+        name = "阅读"
+        url = "/books"
+		weight="1"
+      [[menu.main]]
+        identifier = "观影"
+        name = "观影"
+        url = "/movies"
+		weight="2"
+      [[menu.main]]
+        identifier = "about"
+        name = "关于"
+        url = "/about"
+		weight="3"
+
