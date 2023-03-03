@@ -23,13 +23,6 @@ jobs:
         format: csv
         dir: ./data/douban
 
-    - name: movie-watching
-      uses: Ihavenoideaa/doumark-action@0.1.0
-      with:
-        id: 203067519
-        type: movie
-        format: csv
-        dir: ./data/douban
 
     - name: book-done
       uses: lizheming/doumark-action@master
@@ -39,13 +32,6 @@ jobs:
         format: csv
         dir: ./data/douban
 
-    - name: book-reading
-      uses: Ihavenoideaa/doumark-action@0.1.0
-      with:
-        id: 203067519
-        type: book
-        format: csv
-        dir: ./data/douban
 
     - name: Commit
       uses: EndBug/add-and-commit@v9
