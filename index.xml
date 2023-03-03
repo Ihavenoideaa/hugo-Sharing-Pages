@@ -5,21 +5,21 @@
     
     
     
-    <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/</link>
+    <link>https://hf.xzgl.site/</link>
     <description>Recent content on 读书观影记录</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 17 Sep 1986 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ihavenoideaa.github.io/hugo-Sharing-Pages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hf.xzgl.site/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/about/</link>
+      <link>https://hf.xzgl.site/about/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ihavenoideaa.github.io/hugo-Sharing-Pages/about/</guid>
+      <guid>https://hf.xzgl.site/about/</guid>
       <description>
         
           
@@ -38,13 +38,13 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
     
     <item>
       <title>Hello Friend</title>
-      <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/post/hello/</link>
+      <link>https://hf.xzgl.site/post/hello/</link>
       <pubDate>Wed, 17 Sep 1986 00:00:00 +0000</pubDate>
       
-      <guid>https://ihavenoideaa.github.io/hugo-Sharing-Pages/post/hello/</guid>
+      <guid>https://hf.xzgl.site/post/hello/</guid>
       <description>
         
-          &lt;img src=&#34;https://ihavenoideaa.github.io/hugo-Sharing-Pages/img/hello.jpg&#34;/&gt;
+          &lt;img src=&#34;https://hf.xzgl.site/img/hello.jpg&#34;/&gt;
           
         
         
@@ -57,10 +57,10 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
     
     <item>
       <title>Archive</title>
-      <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/archive/</link>
+      <link>https://hf.xzgl.site/archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ihavenoideaa.github.io/hugo-Sharing-Pages/archive/</guid>
+      <guid>https://hf.xzgl.site/archive/</guid>
       <description>
         
           
@@ -77,10 +77,10 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
     
     <item>
       <title>我的观影</title>
-      <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/movies/</link>
+      <link>https://hf.xzgl.site/movies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ihavenoideaa.github.io/hugo-Sharing-Pages/movies/</guid>
+      <guid>https://hf.xzgl.site/movies/</guid>
       <description>
         
           
@@ -97,10 +97,10 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
     
     <item>
       <title>我的阅读</title>
-      <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/books/</link>
+      <link>https://hf.xzgl.site/books/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ihavenoideaa.github.io/hugo-Sharing-Pages/books/</guid>
+      <guid>https://hf.xzgl.site/books/</guid>
       <description>
         
           
