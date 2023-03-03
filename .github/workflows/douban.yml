@@ -19,9 +19,9 @@ jobs:
       uses: lizheming/doumark-action@master
       with:
         id: 203067519
-        type: movie-done
+        type: movie
         format: csv
-        dir: ./data/douban
+        dir: ./data/douban/done
 
 
     - name: book-done
@@ -30,7 +30,7 @@ jobs:
         id: 203067519
         type: book
         format: csv
-        dir: ./data/douban
+        dir: ./data/douban/done
 
 
     - name: Commit
