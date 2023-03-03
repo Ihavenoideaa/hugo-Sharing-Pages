@@ -13,7 +13,9 @@ paginate = 5
   # Enable to show reading time in minutes for posts
   showReadingTime = false
   
-
+[permalinks]
+  posts = "/:filename/"
+  tags = "/tags/:slug/"
 
 [languages]
   [languages.en]

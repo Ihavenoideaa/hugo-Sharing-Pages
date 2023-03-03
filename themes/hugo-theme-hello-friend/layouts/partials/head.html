@@ -17,9 +17,10 @@
 {{- partial "prepended_head.html" . }}
 
 <!-- Theme CSS -->
-{{ $res := resources.Get "css/style.scss" }}
-{{ $style := $res | resources.ToCSS }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+
+<link rel="stylesheet" href="/css/style.css" />
+
+
 <!-- Custom CSS to override theme properties (/static/style.css) -->
 <link rel="stylesheet" href="{{ "style.css" | absURL }}" />
 
@@ -27,15 +28,9 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "img/apple-touch-icon-144-precomposed.png" | absURL }}" />
 <link rel="shortcut icon" href="{{ "img/favicon.png" | absURL }}" />
 
-<!-- Fonts -->
-<link href="{{ (resources.Get "fonts/Inter-Italic.woff2").RelPermalink }}" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="{{ (resources.Get "fonts/Inter-Regular.woff2").RelPermalink }}" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="{{ (resources.Get "fonts/Inter-Medium.woff2").RelPermalink }}" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="{{ (resources.Get "fonts/Inter-MediumItalic.woff2").RelPermalink }}" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="{{ (resources.Get "fonts/Inter-Bold.woff2").RelPermalink }}" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="{{ (resources.Get "fonts/Inter-BoldItalic.woff2").RelPermalink }}" rel="preload" type="font/woff2" as="font" crossorigin="">
+
 <!-- 启用「霞鹜文楷」在线字体-->
-<link rel="stylesheet" href="//cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
 <!-- Twitter Card -->
 {{ template "_internal/twitter_cards.html" . }}
 
