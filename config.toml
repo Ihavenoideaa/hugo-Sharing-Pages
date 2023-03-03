@@ -1,5 +1,5 @@
-baseurl = "/"
-languageCode = "en-us"
+baseurl = ""
+languageCode = "zh-CN"
 theme = "hugo-theme-hello-friend"
 paginate = 5
 
@@ -12,6 +12,8 @@ paginate = 5
   showMenuItems = 5
   # Enable to show reading time in minutes for posts
   showReadingTime = false
+  
+
 
 [languages]
   [languages.en]
@@ -31,7 +33,7 @@ paginate = 5
 
     [params.logo]
       logoText = "书山有路勤为径"
-      logoHomeLink = "/"
+      logoHomeLink = ""
     # or
     #
     # path = "/img/your-example-logo.svg"
@@ -41,16 +43,16 @@ paginate = 5
       [[menu.main]]
         identifier = "阅读"
         name = "阅读"
-        url = "/books"
+        url = "/books/"
 		weight="1"
       [[menu.main]]
         identifier = "观影"
         name = "观影"
-        url = "/movies"
+        url = "/movies/"
 		weight="2"
       [[menu.main]]
         identifier = "about"
         name = "关于"
-        url = "/about"
+        url = "/about/"
 		weight="3"
 
