@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>读书观影记录</title>
+    
+    
+    
+    <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/</link>
+    <description>Recent content on 读书观影记录</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 17 Sep 1986 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ihavenoideaa.github.io/hugo-Sharing-Pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/about/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ihavenoideaa.github.io/hugo-Sharing-Pages/about/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Hi there#My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.
+We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
+This theme is pretty basic and covers all of the essentials. All you have to do is start typing!
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Hello Friend</title>
+      <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/post/hello/</link>
+      <pubDate>Wed, 17 Sep 1986 00:00:00 +0000</pubDate>
+      
+      <guid>https://ihavenoideaa.github.io/hugo-Sharing-Pages/post/hello/</guid>
+      <description>
+        
+          &lt;img src=&#34;https://ihavenoideaa.github.io/hugo-Sharing-Pages/img/hello.jpg&#34;/&gt;
+          
+        
+        
+        
+          &#34;Hello, friend?&#34; That&#39;s lame. Maybe I should give you a name?
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Archive</title>
+      <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ihavenoideaa.github.io/hugo-Sharing-Pages/archive/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>我的观影</title>
+      <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/movies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ihavenoideaa.github.io/hugo-Sharing-Pages/movies/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>我的阅读</title>
+      <link>https://ihavenoideaa.github.io/hugo-Sharing-Pages/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ihavenoideaa.github.io/hugo-Sharing-Pages/books/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
