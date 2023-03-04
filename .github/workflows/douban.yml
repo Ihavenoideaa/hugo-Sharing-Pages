@@ -20,9 +20,27 @@ jobs:
       with:
         id: 203067519
         type: movie
+        stauts: done
         format: csv
         dir: ./data/douban/done
 
+    - name: movie-doing
+      uses: lizheming/doumark-action@master
+      with:
+        id: 203067519
+        type: movie
+        stauts: doing
+        format: csv
+        dir: ./data/douban/doing
+
+    - name: movie-wish
+      uses: lizheming/doumark-action@master
+      with:
+        id: 203067519
+        type: movie
+        stauts: mark
+        format: csv
+        dir: ./data/douban/wish
 
     - name: book-done
       uses: lizheming/doumark-action@master
@@ -32,6 +50,21 @@ jobs:
         format: csv
         dir: ./data/douban/done
 
+    - name: book-doing
+      uses: lizheming/doumark-action@master
+      with:
+        id: 203067519
+        type: book
+        format: csv
+        dir: ./data/douban/doing
+
+    - name: book-wish
+      uses: lizheming/doumark-action@master
+      with:
+        id: 203067519
+        type: book
+        format: csv
+        dir: ./data/douban/wish
 
     - name: Commit
       uses: EndBug/add-and-commit@v9
