@@ -1,12 +1,15 @@
 # .github/workflows/douban.yml
 name: douban
-on: 
-  schedule:
-  - cron: "17 * * * *"
+#on: 
+ # schedule:
+#  - cron: "17 * * * *"
   #- cron: "0 0,5,18,23 * * *"
-  watch:
-    types: [started]
-
+ # watch:
+ #   types: [started]
+on:
+  push:
+    branches:
+      - main   # master 更新触发
 jobs:
   douban:
     name: Douban mark data sync
