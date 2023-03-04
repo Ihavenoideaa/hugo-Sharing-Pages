@@ -1,8 +1,8 @@
 # .github/workflows/douban.yml
-name: douban
+name: douban-wish
 on: 
   schedule:
-  - cron: "12 * * * *"
+  - cron: "34 * * * *"
   #- cron: "0 0,5,18,23 * * *"
   watch:
     types: [started]
