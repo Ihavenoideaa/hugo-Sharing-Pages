@@ -5,7 +5,7 @@ paginate = 5
 
 [params]
   # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "post"
+  contentTypeName = "posts"
   # "light" or "dark"
   defaultTheme = "dark"
   # if you set this to 0, only submenu trigger will be visible
@@ -42,19 +42,23 @@ paginate = 5
     # alt = "Your example logo alt text"
 
     [menu]
+        [[menu.main]]
+        name="归档"
+        url="/archives/"
+         weight="1"
       [[menu.main]]
         identifier = "阅读"
         name = "阅读"
         url = "/books/"
-		weight="1"
+		    weight="2"
       [[menu.main]]
         identifier = "观影"
         name = "观影"
         url = "/movies/"
-		weight="2"
+		    weight="3"
       [[menu.main]]
         identifier = "about"
         name = "关于"
         url = "/about/"
-		weight="3"
+		    weight="4"
 
