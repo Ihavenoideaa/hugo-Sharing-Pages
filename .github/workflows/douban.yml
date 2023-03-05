@@ -1,11 +1,10 @@
 # .github/workflows/douban.yml
 name: douban
 #on: 
- # schedule:
- # - cron: "17 * * * *"
-  #- cron: "0 0,5,18,23 * * *"
- # watch:
- #   types: [started]
+  #schedule:
+  #- cron: "0 5,20 * * *"
+  #watch:
+    #types: [started]
 on:
   push:
     branches:
@@ -25,16 +24,6 @@ jobs:
         data/douban/doing/movie.csv \
         data/douban/wish/book.csv \
         data/douban/wish/movie.csv
-    - name: Commit files
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git commit -a -m "douban changes"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}          # 删除对应文件end
 
     - name: movie-done
       uses: lizheming/doumark-action@master
@@ -90,8 +79,19 @@ jobs:
         format: csv
         dir: ./data/douban/wish
 
-    - name: Commit
-      uses: EndBug/add-and-commit@v9
+#    - name: Commit
+#      uses: EndBug/add-and-commit@v9
+#      with:
+#        message: 'chore: update douban data'
+#        add: './data/douban'
+
+    - name: Commit files
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git commit -a -m "douban changes"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
       with:
-        message: 'chore: update douban data'
-        add: './data/douban'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}          # 删除对应文件end
