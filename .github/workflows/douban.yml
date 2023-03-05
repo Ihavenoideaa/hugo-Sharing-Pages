@@ -18,6 +18,24 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: Create local changes    # 删除对应文件start
+      run: |
+        rm -f \
+        data/douban/doing/book.csv \
+        data/douban/doing/movie.csv \
+        data/douban/wish/book.csv \
+        data/douban/wish/movie.csv
+    - name: Commit files
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git commit -a -m "douban changes"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}          # 删除对应文件end
+
     - name: movie-done
       uses: lizheming/doumark-action@master
       with:
