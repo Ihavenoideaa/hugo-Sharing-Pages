@@ -4,10 +4,8 @@ on:
   push:
     branches:
       - main   # master 更新触发
-  workflow_run:
-    workflows: ["douban"]  # douban工作流完成触发
-    types:
-      - completed
+    paths:
+      - 'data/**'
 
 jobs:
   build-deploy:
