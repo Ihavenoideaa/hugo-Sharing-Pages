@@ -2,9 +2,9 @@ name: Deploy Hugo # 任君喜欢
 
 on:
   push:
-    branches:
-      - main   # master 更新触发
-    paths:
+#    branches:
+#      - main   # master 更新触发
+     paths:
       - 'data/**'
 
 jobs:
