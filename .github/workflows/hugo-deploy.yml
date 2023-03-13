@@ -1,13 +1,10 @@
 name: Deploy Hugo # 任君喜欢
 
 on:
-#  push:
-#    branches:
-#      - main   # master 更新触发workflow_run:
-  workflow_run: 
-    workflows: [douban]
-    types:
-      - completed
+  push:
+    branches:
+      - main   # master 更新触发workflow_run:
+
   
 
 jobs:
