@@ -115,11 +115,11 @@ jobs:
           # Set the output variable 'commit_changed'
           echo "commit_changed=$commit_changed" >> $GITHUB_OUTPUT
           
-    - name: Trigger Another Workflow
-      uses: peter-evans/repository-dispatch@v1
-      if: steps.check_commits.outputs.commit_changed == 'true'
-      with:
-          personal_token: ${{ secrets.personal_token }}
-          repository: ihavenoideaa/hugo-Sharing-Pages
-          event-type: push
-          workflow: Deploy Hugo
+#    - name: Trigger Another Workflow
+#      uses: peter-evans/repository-dispatch@v1
+#      if: steps.check_commits.outputs.commit_changed == 'true'
+#      with:
+#          personal_token: ${{ secrets.personal_token }}
+#          repository: ihavenoideaa/hugo-Sharing-Pages
+#          event-type: push
+#          workflow: Deploy Hugo
