@@ -104,8 +104,10 @@ jobs:
           current_commit=$(cat .git/refs/heads/main)
           if [ "$latest_commit" != "$current_commit" ]; then
             commit_changed='true'
+            echo "douban data needs to be updated"
           else
             commit_changed='false'
+            echo "douban data need not updated"
           fi
          
           # Set the output variable 'commit_changed'
