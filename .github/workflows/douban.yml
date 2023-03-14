@@ -8,7 +8,7 @@ name: douban
 on:
   push:
     branches:
-      - main   # master 更新触发
+      - main   # main 更新触发
 jobs:
   douban:
     name: Douban mark data sync
