@@ -103,9 +103,9 @@ jobs:
           latest_commit=$(git log -1 --pretty=format:%H)
           current_commit=$(cat .git/refs/heads/main)
           if [ "$latest_commit" != "$current_commit" ]; then
-            commit_changed=true
+            commit_changed='true'
           else
-            commit_changed=false
+            commit_changed='false'
           fi
          
           # Set the output variable 'commit_changed'
