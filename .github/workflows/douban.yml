@@ -109,7 +109,7 @@ jobs:
           fi
          
           # Set the output variable 'commit_changed'
-          echo "commit_changed::$commit_changed" >> $GITHUB_OUTPUT
+          echo "commit_changed=$commit_changed" >> $GITHUB_OUTPUT
           
     - name: Trigger Another Workflow
       uses: peter-evans/repository-dispatch@v1
