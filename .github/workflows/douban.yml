@@ -79,19 +79,40 @@ jobs:
         format: csv
         dir: ./data/douban/wish
 
-#    - name: Commit
-#      uses: EndBug/add-and-commit@v9
-#      with:
-#        message: 'chore: update douban data'
-#        add: './data/douban'
-
-    - name: Commit files
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git commit -a -m "douban changes"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    - name: Commit
+      uses: EndBug/add-and-commit@v9
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        message: 'chore: update douban data'
+        add: './data/douban'
+
+ #   - name: Commit files
+ #     run: |
+ #       git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+ #       git config --local user.name "github-actions[bot]"
+ #       git commit -a -m "douban changes"
+ #   - name: Push changes
+ #     uses: ad-m/github-push-action@master
+ #     with:
+ #       github_token: ${{ secrets.GITHUB_TOKEN }}
+ #       branch: ${{ github.ref }}
+
+    - name: Check for new commits
+      id: check_commits
+      run: |
+          echo "Checking for new commits..."
+          latest_commit=$(git log -1 --pretty=format:%H)
+          current_commit=$(cat .git/refs/heads/main)
+          if [ "$latest_commit" != "$current_commit" ]; then
+            echo "::set-output name=commit_changed::true"
+          else
+            echo "::set-output name=commit_changed::false"
+          fi
+      
+    - name: Trigger Another Workflow
+      uses: peter-evans/repository-dispatch@v1
+      if: steps.check_commits.outputs.commit_changed == 'true'
+      with:
+          personal_token: ${{ secrets.personal_token }}
+          repository: ihavenoideaa/hugo-Sharing-Pages
+          event-type: push
+          workflow: Deploy Hugo
